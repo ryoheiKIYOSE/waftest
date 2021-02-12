@@ -1,0 +1,8 @@
+<a href="{% url 'post' %}">投稿する</a>
+
+
+<ol>
+    {% for msg in object_list %}
+        <li>{{  msg.message }}</li>
+    {% endfor %}
+</ol>
